@@ -65,16 +65,16 @@ def netflix_eval(reader, writer) :
         if line[-1] == ':':
 		# It's a movie
             current_movie = line.rstrip(':')
-            #writer.write(line)
-            #writer.write('\n')
+            writer.write(line)
+            writer.write('\n')
         else:
 		# It's a customer
             current_customer = line
             prediction = AVERAGE_MOVIE_RATING[int(current_movie)] - (AVERAGE_RATING - AVERAGE_CUSTOMER_RATING[int(current_customer)])
             predictions.append(prediction)
             actual.append(ACTUAL_CUSTOMER_RATING[(int(current_customer), int(current_movie))])
-            #writer.write(str(prediction)) 
-            #writer.write('\n')	
+            writer.write(str(prediction)) 
+            writer.write('\n')	
     # calculate rmse for predications and actuals
     rmse = sqrt(mean(square(subtract(predictions, actual))))
     writer.write(str(rmse)[:4] + '\n')
