@@ -32,21 +32,10 @@ def create_cache(filename):
 
 
 AVERAGE_RATING = 3.60428996442
-ACTUAL_CUSTOMER_RATING = create_cache(
-    "cache-actualCustomerRating.pickle")
-'''
-AVERAGE_MOVIE_RATING_PER_YEAR = create_cache(
-    "cache-movieAverageByYear.pickle")
-YEAR_OF_RATING = create_cache("cache-yearCustomerRatedMovie.pickle")
-CUSTOMER_AVERAGE_RATING_YEARLY = create_cache(
-    "cache-customerAverageRatingByYear.pickle")
-'''
-
+ACTUAL_CUSTOMER_RATING = create_cache("cache-actualCustomerRating.pickle")
 AVERAGE_CUSTOMER_RATING = create_cache("cache-averageCustomerRating.pickle")
 AVERAGE_MOVIE_RATING = create_cache("cache-averageMovieRating.pickle")
-actual_scores_cache ={10040: {2417853: 1, 1207062: 2, 2487973: 3}}
-movie_year_cache = {10040: 1990}
-decade_avg_cache = {1990: 2.4}
+
 
 # ------------
 # netflix_eval
@@ -70,6 +59,7 @@ def netflix_eval(reader, writer) :
         else:
 		# It's a customer
             current_customer = line
+                # average movie rating for a particular movie offset by a user's average distance from the overall average rating 
             prediction = AVERAGE_MOVIE_RATING[int(current_movie)] - (AVERAGE_RATING - AVERAGE_CUSTOMER_RATING[int(current_customer)])
             predictions.append(prediction)
             actual.append(ACTUAL_CUSTOMER_RATING[(int(current_customer), int(current_movie))])
