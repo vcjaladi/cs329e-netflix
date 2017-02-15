@@ -1,0 +1,65 @@
+commit f95d9a6105bc318b03309c4ab87d2c89f4c52f73
+Author: Varun Jaladi <vcjaladi@cs.utexas.edu>
+Date:   Wed Feb 15 13:10:23 2017 -0600
+
+    removed probe.txt
+
+commit 004b4783e2ac2d8dbb37662bfba7cc46c3aa6770
+Author: Varun Jaladi <vcjaladi@cs.utexas.edu>
+Date:   Wed Feb 15 13:09:04 2017 -0600
+
+    final changes
+
+commit 734f38acd25a35b7b348d2b7539bf679feca71c5
+Author: Varun Jaladi <vcjaladi@cs.utexas.edu>
+Date:   Mon Feb 13 18:01:43 2017 -0600
+
+    Created acceptanc tests!
+
+commit 9fa1cd094f275ba2e83aaa672ea9640ced130128
+Author: Varun Jaladi <vcjaladi@cs.utexas.edu>
+Date:   Mon Feb 13 17:49:20 2017 -0600
+
+    Unit tests created!
+
+commit 3ca1638fbaa5cc000dc741753b3b61f43189581d
+Author: Varun Jaladi <vcjaladi@cs.utexas.edu>
+Date:   Mon Feb 13 17:28:57 2017 -0600
+
+    eval function with RSME below 1
+
+commit cf98d61fbed4fedab947c4fc12a1e5984a3217f8
+Author: Varun Jaladi <vcjaladi@cs.utexas.edu>
+Date:   Mon Feb 13 17:12:07 2017 -0600
+
+    First working eval function
+
+commit 83aaf6b0a3f8fcfba1b7c525db9fbccb2b7783f3
+Author: Varun Jaladi <varunjaladi@wireless-10-147-35-253.public.utexas.edu>
+Date:   Thu Feb 9 15:55:45 2017 -0600
+
+    make test command
+
+commit 66a8f4b49fdf46a1a2c1af8e09a5ff9dc1a51635
+Author: Varun Jaladi <varunjaladi@wireless-10-147-35-253.public.utexas.edu>
+Date:   Thu Feb 9 15:52:50 2017 -0600
+
+    updated gitignore
+
+commit aee601bf9d6f81cacbead36c6e695aebf151a756
+Author: Varun Jaladi <varunjaladi@wireless-10-147-35-253.public.utexas.edu>
+Date:   Thu Feb 9 15:41:14 2017 -0600
+
+    Add travis.yml file
+
+commit 8d3468c9abdfb26e824122518849b11123f3b927
+Author: Varun Jaladi <varunjaladi@wireless-10-147-35-253.public.utexas.edu>
+Date:   Thu Feb 9 15:37:40 2017 -0600
+
+    Initial files
+
+commit bdc7d69a3d96d4bb7261c02bd7e7b1346879f318
+Author: vcjaladi <vcjaladi@utexas.edu>
+Date:   Thu Feb 9 15:21:21 2017 -0600
+
+    Initial commit
